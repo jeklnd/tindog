@@ -29,36 +29,62 @@ body {
 
 #title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 /* Hero Section */
-.hero-div {
-    /* position: relative; */
-}
 
 .hero-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.5;
     font-weight: 900;
     color: white;
 }
 
+.hero-div {
+    padding-bottom: 30px;
+}
+
 .download-buttons {
-    margin: 10% 3% 5% 0;
+    margin: 8% 3% 8% 0;
 }
 
 .hero-image {
-    transform: rotate(17deg);
-    width: 70%;
+    width: 20%;
+    transform: rotate(15deg);
+    position: absolute;
+    right: 30%;
+} 
 
-    position: relative;
-    z-index: 0;
-    left: 15%;
-    padding-top: 5%;
+@media (max-width: 1264px) {
+    .hero-image {
+        right: 25%;
+    }
 }
+
+@media (max-width: 1085px) {
+    .hero-image {
+        right: 20%;
+    }
+}
+@media (max-width: 992px) {
+    .hero-image {
+        position: static;
+        transform: rotate(0deg);
+        width: 40%;
+    }   
+
+    .hero-div {
+        padding-bottom: 0px;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+}    
+
 
 /* Features Section*/
 #features {
@@ -89,7 +115,8 @@ body {
 }
 
 h3 {
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
     font-size: 1.5rem;
 }
 
@@ -152,3 +179,37 @@ h2 {
 }
 
 
+/* Call to Action Section */
+#cta {
+    background-color: #FD2C79;
+    text-align: center;
+    padding: 8% 20%;
+
+}
+.cta-header {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin: 0%;
+}
+
+.cta-buttons {
+    margin: 5% 2% 0%;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 8% 20%;
+}
+
+.footer-logos {
+    padding: 2% 1%;
+    border: none;
+    background-color: white;
+}
+
+.footer-text {
+    color: grey;
+}
