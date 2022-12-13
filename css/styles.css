@@ -1,15 +1,47 @@
-/* General Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold", sans-serif;
+}
+
+.big-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: white;
+}
+
+.section-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 
-/* Navigation Bar */
-.hero-section {
+/* Background Colors */
+.linear-gradient {
     background: rgb(253,39,124);
     background: linear-gradient(180deg, rgba(253,39,124,1) 0%, rgba(254,78,105,1) 50%, rgba(255,118,85,1) 100%);
 }
 
+.reverse-gradient {
+    background: rgb(253,39,124);
+    background: linear-gradient(180deg, rgba(255,118,85,1) 0%, rgba(254,78,105,1) 50%, rgba(253,39,124,1) 100%);
+}
+
+.white-background {
+    background-color: white;
+}
+
+
+/* Navigation Bar */
 .container-fluid {
     padding: 3% 15% 7%;
 }
@@ -33,14 +65,10 @@ body {
     font-weight: bold;
 }
 
-/* Hero Section */
 
-.hero-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5;
-    font-weight: 900;
-    color: white;
+/* Hero Section */
+.hero-heading {
+    text-align: left;
 }
 
 .hero-div {
@@ -52,10 +80,10 @@ body {
 }
 
 .hero-image {
-    width: 20%;
-    transform: rotate(15deg);
     position: absolute;
     right: 30%;
+    transform: rotate(15deg);
+    width: 20%;
 } 
 
 @media (max-width: 1264px) {
@@ -76,12 +104,12 @@ body {
         width: 40%;
     }   
 
-    .hero-div {
-        padding-bottom: 0px;
+    .big-heading {
+        text-align: center;
     }
 
-    .hero-section {
-        text-align: center;
+    .hero-div {
+        padding-bottom: 0px;
     }
 }    
 
@@ -90,10 +118,8 @@ body {
 #features {
     position: relative;
     z-index: 1;
-    background-color: white;
 }
 .features-parent {
-    text-align: center;
     padding: 7% 15% 6%;
 
 }
@@ -102,43 +128,28 @@ body {
     padding: 2rem;
 }
 
-.section-2-icons:hover{
-    color: #FF7356;
+.feature-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.5;
 }
-.section-2-icons {
+
+.feature-icons {
     color:#FD2A7A; 
-    text-align: center;
-    font-size: 3rem;
     display: inline-block;
+    font-size: 3rem;
     line-height: 0;
     margin-bottom: 1rem;
 }
 
-h3 {
-    font-family: 'Montserrat-Black', sans-serif;
-    font-weight: 900;
-    font-size: 1.5rem;
+.feature-icons:hover{
+    color: #FF7356;
 }
 
-.s2-subtext {
-    color: #8f8f8f;
-}
 
 /* Testimonial Section */
 #testimonials {
-    background: rgb(253,39,124);
-    background: linear-gradient(180deg, rgba(255,118,85,1) 0%, rgba(254,78,105,1) 50%, rgba(253,39,124,1) 100%);
-
-    text-align: center;
-    /* background-color: #FE4F69; */
     color: #fff;
-}
-
-h2 {
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -152,9 +163,9 @@ h2 {
     padding: 7% 15% 3%;
 }
 
+
 /* Press Section */
 #press {
-    text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -164,10 +175,10 @@ h2 {
     margin: 20px 20px 
 }
 
+
 /* Pricing Section */
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-columns {
@@ -178,19 +189,16 @@ h2 {
     width: 100%;
 }
 
+.card-heading {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
 
 /* Call to Action Section */
 #cta {
     background-color: #FD2C79;
-    text-align: center;
     padding: 8% 20%;
-
-}
-.cta-header {
-    color: white;
-    font-size: 3rem;
-    line-height: 1.5;
-    margin: 0%;
 }
 
 .cta-buttons {
@@ -199,8 +207,6 @@ h2 {
 
 /* Footer Section */
 #footer {
-    background-color: #fff;
-    text-align: center;
     padding: 6% 20%;
 }
 
@@ -208,8 +214,4 @@ h2 {
     padding: 2% 1%;
     border: none;
     background-color: white;
-}
-
-.footer-text {
-    color: grey;
 }
